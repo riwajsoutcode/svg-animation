@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --dark-color: #635bff;
+            --light-color: #80e9ff;
+        }
+        svg {
+            cursor: pointer;
+        }
+        #darkGroup {
+            fill: var(--dark-color);
+        }
+        #lightGroup {
+            fill: var(--light-color);
+        }
+        #a1, #a2, #a3 {
+            transition: all 1s ease;
+        }
+        #a1 {
+            transform: translateX(-20%);
+            opacity: 0;
+        }
+        svg:hover #a1 {
+            transform: translateX(10%);
+            opacity: 1;
+        }
+        svg:hover #a3 {
+            transform: translateX(70%);
+            opacity: 0;
+        }
+        svg:hover #a2 {
+            transform: translateX(10%);
+        }
+
+    </style>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="345" height="276" viewBox="0 0 345 276" >
+        <path id="a1" d="M87.5 64.3879C87.5 58.2295 94.1667 54.3805 99.5 57.4597L227 131.072C232.333 134.151 232.333 141.849 227 144.928L99.5 218.54C94.1667 221.62 87.5 217.771 87.5 211.612L87.5 64.3879Z" fill="#8C79FF"/>
+        <path id="a2" d="M156.469 64.3564C156.469 58.198 163.135 54.349 168.469 57.4282L295.969 131.04C301.302 134.12 301.302 141.818 295.969 144.897L168.469 218.509C163.135 221.588 156.469 217.739 156.469 211.581L156.469 64.3564Z" fill="#CC79FF" fill-opacity="0.78"/>
+        <path id="a3" d="M87.4686 64.3564C87.4686 58.198 94.1352 54.349 99.4686 57.4282L226.969 131.04C232.302 134.12 232.302 141.818 226.969 144.897L99.4686 218.509C94.1352 221.588 87.4686 217.739 87.4686 211.581L87.4686 64.3564Z" fill="#79A7FF" fill-opacity="0.91"/>
+    </svg>
+</body>
+</html>
